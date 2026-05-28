@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Open in Devin",
+  "version": "1.0",
+  "description": "Open the current GitHub PR in Devin Review with one click",
+  "permissions": ["activeTab", "tabs"],
+  "browser_action": {
+    "default_title": "Open in Devin",
+    "default_icon": "icon.svg"
+  },
+  "background": {
+    "scripts": ["background-firefox.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "icon.svg",
+    "128": "icon.svg"
+  }
+}
