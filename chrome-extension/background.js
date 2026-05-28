@@ -14,10 +14,11 @@ function openInDevin(tabId) {
 chrome.action.onClicked.addListener((tab) => openInDevin(tab.id));
 
 // Keyboard shortcut — fires regardless of action enabled/disabled state
+// No URL check needed: host_permissions limits executeScript to github.com only
 chrome.commands.onCommand.addListener((command) => {
   if (command !== 'open-in-devin') return;
   chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
-    if (tab?.url?.startsWith('https://github.com/')) openInDevin(tab.id);
+    if (tab) openInDevin(tab.id);
   });
 });
 
