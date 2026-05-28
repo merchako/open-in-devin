@@ -4,6 +4,8 @@ A minimal browser extension (and bookmarklet) that opens any GitHub PR in [Devin
 
 When you click the extension icon on a GitHub PR page, it replaces `https://github.com` with `https://devinreview.com` and opens the result in a new tab.
 
+The extension only activates on `github.com` — it has no access to any other site.
+
 ---
 
 ## Bookmarklet
@@ -53,10 +55,19 @@ To reload after editing: click the refresh icon on the extension card.
 ## Usage
 
 1. Navigate to any GitHub pull request
-2. Click the **Open in Devin** icon in your browser toolbar
+2. Click the **Open in Devin** icon in your browser toolbar (or use the keyboard shortcut)
 3. The PR opens in Devin Review in a new tab
 
-If you're not on a GitHub page, the extension will show an alert.
+The icon is grayed out on non-GitHub pages. The keyboard shortcut also only works on GitHub.
+
+### Keyboard shortcut
+
+| OS | Shortcut |
+|----|----------|
+| macOS | `Cmd + Option + R` |
+| Windows / Linux | `Ctrl + Alt + R` |
+
+To customize: go to <a href="chrome://extensions/shortcuts"><code>chrome://extensions/shortcuts</code></a> (or your browser's equivalent).
 
 ---
 
