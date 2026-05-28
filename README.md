@@ -33,20 +33,18 @@ javascript:(function(){if(!location.href.includes('github.com')){alert('Not a Gi
    - Opera: `opera://extensions`
    - Vivaldi: `vivaldi://extensions`
 3. Toggle **Developer mode** on
-4. Click **Load unpacked** and select this folder
+4. Click **Load unpacked** and select the `chrome/` folder
 5. The extension icon appears in the toolbar — click it on any GitHub PR
 
 To reload after editing: click the refresh icon on the extension card.
 
 ### Firefox
 
-Firefox requires a slightly different manifest. Use `manifest-firefox.json` and `background-firefox.js` instead.
-
-1. Rename `manifest-firefox.json` to `manifest.json` (replacing the existing one)
+1. Download or clone this repo
 2. Go to `about:debugging` in the address bar
 3. Click **This Firefox** in the left sidebar
 4. Click **Load Temporary Add-on…**
-5. Select either file inside this folder
+5. Select either file inside the `firefox/` folder
 
 > **Note:** Temporary add-ons in Firefox are removed when the browser is closed. For a permanent install the extension must be signed by Mozilla. For personal use, enable unsigned extensions in [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) or [Firefox Nightly](https://www.mozilla.org/en-US/firefox/channel/desktop/) by setting `xpinstall.signatures.required` to `false` in `about:config`.
 
@@ -64,10 +62,7 @@ If you're not on a GitHub page, the extension will show an alert.
 
 ## Files
 
-| File | Purpose |
-|------|---------|
-| `manifest.json` | Chrome/Chromium MV3 manifest |
-| `background.js` | Chrome/Chromium service worker |
-| `manifest-firefox.json` | Firefox MV2 manifest |
-| `background-firefox.js` | Firefox background script |
-| `icon.svg` | Toolbar icon (Cognition logo) |
+```
+chrome/          Chrome, Arc, Brave, Edge, Opera, Vivaldi (Manifest V3)
+firefox/         Firefox (Manifest V2)
+```
