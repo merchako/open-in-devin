@@ -65,7 +65,7 @@ The icon is grayed out on non-GitHub pages. The keyboard shortcut also only work
 | OS | Shortcut |
 |----|----------|
 | macOS | `Cmd + Option + R` |
-| Windows / Linux | `Ctrl + Alt + R` |
+| Windows / Linux | `Alt + Shift + R` |
 
 To customize: go to <a href="chrome://extensions/shortcuts"><code>chrome://extensions/shortcuts</code></a> (or your browser's equivalent).
 

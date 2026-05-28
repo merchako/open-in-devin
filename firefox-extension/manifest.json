@@ -5,7 +5,7 @@
   "description": "Open the current GitHub PR in Devin Review with one click",
   "permissions": ["activeTab", "tabs", "https://github.com/*"],
   "browser_action": {
-    "default_title": "Open in Devin (Ctrl+Alt+R)",
+    "default_title": "Open in Devin",
     "default_icon": {
       "16": "icon-16.png",
       "32": "icon-32.png",
@@ -22,7 +22,7 @@
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "Ctrl+Alt+R",
+        "default": "Alt+Shift+R",
         "mac": "Command+Option+R"
       },
       "description": "Open current GitHub PR in Devin Review"
