@@ -26,12 +26,12 @@ javascript:(function(){if(!location.href.includes('github.com')){alert('Not a Gi
 
 1. Download or clone this repo
 2. Go to your browser's extensions page:
-   - Chrome: [chrome://extensions](chrome://extensions)
-   - Arc: [arc://extensions](arc://extensions)
-   - Brave: [brave://extensions](brave://extensions)
-   - Edge: [edge://extensions](edge://extensions)
-   - Opera: [opera://extensions](opera://extensions)
-   - Vivaldi: [vivaldi://extensions](vivaldi://extensions)
+   - Chrome: <a href="chrome://extensions"><code>chrome://extensions</code></a>
+   - Arc: <a href="arc://extensions"><code>arc://extensions</code></a>
+   - Brave: <a href="brave://extensions"><code>brave://extensions</code></a>
+   - Edge: <a href="edge://extensions"><code>edge://extensions</code></a>
+   - Opera: <a href="opera://extensions"><code>opera://extensions</code></a>
+   - Vivaldi: <a href="vivaldi://extensions"><code>vivaldi://extensions</code></a>
 3. Toggle **Developer mode** on
 4. Click **Load unpacked** and select the `chrome/` folder
 5. The extension icon appears in the toolbar — click it on any GitHub PR
@@ -41,7 +41,7 @@ To reload after editing: click the refresh icon on the extension card.
 ### Firefox
 
 1. Download or clone this repo
-2. Go to [about:debugging](about:debugging) in the address bar
+2. Go to <a href="about:debugging"><code>about:debugging</code></a> in the address bar
 3. Click **This Firefox** in the left sidebar
 4. Click **Load Temporary Add-on…**
 5. Select either file inside the `firefox/` folder
