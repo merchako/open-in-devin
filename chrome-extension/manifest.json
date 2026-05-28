@@ -21,7 +21,7 @@
     "128": "icon-128.png"
   },
   "commands": {
-    "_execute_action": {
+    "open-in-devin": {
       "suggested_key": {
         "default": "Alt+Shift+R"
       },

@@ -1,13 +1,21 @@
 function openInDevin(tab) {
-  if (!tab.url.startsWith('https://github.com/')) return;
   browser.tabs.create({
     url: tab.url.replace('https://github.com', 'https://devinreview.com')
   });
 }
 
+// Toolbar icon click
 browser.browserAction.onClicked.addListener(openInDevin);
 
-// Gray out the action on non-GitHub tabs
+// Keyboard shortcut — fires regardless of action enabled/disabled state
+browser.commands.onCommand.addListener((command) => {
+  if (command !== 'open-in-devin') return;
+  browser.tabs.query({ active: true, currentWindow: true }).then(([tab]) => {
+    if (tab?.url?.startsWith('https://github.com/')) openInDevin(tab);
+  });
+});
+
+// Gray out icon on non-GitHub tabs
 function updateAction(tabId, url) {
   const onGitHub = url && url.startsWith('https://github.com/');
   if (onGitHub) {
