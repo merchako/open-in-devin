@@ -58,16 +58,7 @@ To reload after editing: click the refresh icon on the extension card.
 2. Click the **Open in Devin** icon in your browser toolbar (or use the keyboard shortcut)
 3. The PR opens in Devin Review in a new tab
 
-The icon is grayed out on non-GitHub pages. The keyboard shortcut also only works on GitHub.
-
-### Keyboard shortcut
-
-| OS | Shortcut |
-|----|----------|
-| macOS | `Option + Shift + R` |
-| Windows / Linux | `Alt + Shift + R` |
-
-To customize: go to <a href="chrome://extensions/shortcuts"><code>chrome://extensions/shortcuts</code></a> (or your browser's equivalent).
+The icon is grayed out on non-GitHub pages.
 
 ---
 

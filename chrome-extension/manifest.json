@@ -20,14 +20,6 @@
     "48": "icon-48.png",
     "128": "icon-128.png"
   },
-  "commands": {
-    "open-in-devin": {
-      "suggested_key": {
-        "default": "Alt+Shift+R"
-      },
-      "description": "Open current GitHub PR in Devin Review"
-    }
-  },
   "background": {
     "service_worker": "background.js"
   }

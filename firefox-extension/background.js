@@ -7,15 +7,6 @@ function openInDevin(tab) {
 // Toolbar icon click
 browser.browserAction.onClicked.addListener(openInDevin);
 
-// Keyboard shortcut — fires regardless of action enabled/disabled state
-// host_permissions limits tabs.create to github.com URLs only
-browser.commands.onCommand.addListener((command) => {
-  if (command !== 'open-in-devin') return;
-  browser.tabs.query({ active: true, currentWindow: true }).then(([tab]) => {
-    if (tab?.url) openInDevin(tab);
-  });
-});
-
 // Gray out icon on non-GitHub tabs
 function updateAction(tabId, url) {
   const onGitHub = url && url.startsWith('https://github.com/');
